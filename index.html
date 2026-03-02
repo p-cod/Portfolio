@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eyube Precious | Fullstack Dev</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">Eyube Precious</div>
+
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+      
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button id="theme-toggle">☀</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1 class="reveal">Hi. Eyube Precious<br>I'm A Frontend Developer.</h1>
+    <p class="reveal">
+      Passionate Frontend Developer focused on crafting accessible,
+      high-performance and user-centric interfaces.
+    </p>
+    <a href="#contact" class="btn reveal">Get In Touch</a>
+  </section>
+  <section class="about reveal" id="about">
+  <div class="about-container">
+    
+    <h2>About Me.</h2>
+
+    <p>
+      I’m a driven Frontend Developer who believes in learning by building. 
+      I don’t just watch tutorials — I experiment, ship projects, and improve along the way.
+    </p>
+
+    <p>
+      From crafting portfolio experiences to building SaaS ideas and business websites, 
+      I focus on creating modern, high-performance, user-centered products that solve real problems.
+    </p>
+
+    <p>
+      I’m constantly pushing myself to level up — exploring animation libraries like GSAP, 
+      improving UI/UX decisions, and strengthening both frontend and backend skills.
+    </p>
+
+    <p>
+      My goal isn’t just to write code. It’s to build products, grow ideas, 
+      and become the kind of developer who can turn vision into reality.
+    </p>
+
+  </div>
+</section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="work">
+  <h2 class="reveal">Projects.</h2>
+
+  <div class="project-card reveal" onclick="openModal('Car Dealer Website')">
+    <div class="project-image">
+      <img src="images/Toyota-Camry.jpg" alt="Car Project">
+    </div>
+    <h3>Car Dealer Platform</h3>
+    <div class="tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+    </div>
+  </div>
+
+  <div class="project-card reveal" onclick="openModal('Student Platform')">
+    <div class="project-image">
+      <img src="Students.jpg" alt="Student Platform">
+    </div>
+    <h3>Unistack</h3>
+    <div class="tags">
+      <span>React</span>
+      <span>Node</span>
+      <span>MongoDB</span>
+    </div>
+  </div>
+</section>
+
+
+  <!-- CONTACT -->
+  <section class="contact reveal" id="contact">
+  <h2>Let’s Work Together.</h2>
+
+  <form class="contact-form"
+    
+    <div class="input-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+    </div>
+
+    <div class="input-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="your@email.com" required>
+    </div>
+
+    <div class="input-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Send Message</button>
+
+  </form>
+</section>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modal-title"></h3>
+      <p>This is a premium project with modern stack and performance optimization.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
